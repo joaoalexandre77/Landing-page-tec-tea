@@ -61,7 +61,7 @@ body{
 }
 
 .logoText{
-    margin-left: 50px;
+    margin-left: 80px;
     width: 700px;
     height: 700px;
 }
@@ -79,6 +79,7 @@ body{
 .Column{
     display: flex;
     flex-direction: row;
+    margin: 0px 40px 0px 40px;
 }
 
 .Titulo-Sobre{
@@ -107,7 +108,6 @@ body{
 
 .Logo-Conloq{
     width: 800px;
-    height: 400px;
 }
 
 /* Fim Tela Sobre Equipe */
@@ -119,3 +119,74 @@ body{
     background-color: #007ABE;
     scroll-margin-top: 80px;
 }
+
+.Div-Equipe{
+    display: flex;
+    flex-direction: column;
+}
+
+.Title-Equipe{
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 50px;
+}
+
+.Div-Cards-Equipe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 40px 0px 40px;
+}
+
+.Card-Equipes{
+    width: 330px;
+    height: 450px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.Card-Equipes:hover{
+    transform: scale(1.06);
+}
+
+
+.Image-Card-Equipe{
+    width: 330px;
+    height: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+    transition: border-radius 0.3s, height 0.2s;
+}
+
+.Card-Equipes:hover .Image-Card-Equipe{
+    height: 330px;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.Info-Cards-Equipe{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.Text-Info-Cards-Equipe{ 
+    font-family: 'roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+.Card-Equipes:hover .Info-Cards-Equipe{
+    opacity: 1;
+}
+
+
+/* Fim Tela Equipe*/
