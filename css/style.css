@@ -1,0 +1,121 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.container{
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+/* Início Tela Header */
+.header-bar{
+    display: flex; 
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    background-color:#ffffff;
+    padding: 0px 50px 0px 50px;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.30);    
+}
+
+.nav-bar{
+    color: #000000;
+    text-decoration: none;
+}
+
+.item-nav-bar{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 26px;
+    margin-left: 40px;
+}
+.logo-hearder{
+    width: 200px;
+}
+/* Fim Tela Header */
+
+
+/* Tela Inicial */
+.Tela-Inicial{
+    background-image: url('../img/mainIMG.svg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 900px;
+    z-index: 0;
+}
+
+.logoText{
+    margin-left: 50px;
+    width: 700px;
+    height: 700px;
+}
+/* Fim Tela Inicial */
+
+
+/* Início Tela Sobre Equipe */
+.Sobre-Equipe{
+    scroll-margin-top: 80px;
+    background-color:#ffffff;
+    height: 900px;
+    border-top-left-radius: 30px;
+}
+
+.Column{
+    display: flex;
+    flex-direction: row;
+}
+
+.Titulo-Sobre{
+    display: flex;
+    justify-content: center;
+    font-size: 70px;
+    font-family: Poppins;
+}
+
+
+.Text-Sobre{
+    flex: 1;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    font-family: Poppins;
+}
+
+.Logo-Sobre{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo-Conloq{
+    width: 800px;
+    height: 400px;
+}
+
+/* Fim Tela Sobre Equipe */
+
+
+/* Início Tela Equipe*/
+.Section-Equipe{
+    height: 900px;
+    background-color: #007ABE;
+    scroll-margin-top: 80px;
+}
