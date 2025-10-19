@@ -7,24 +7,23 @@ const textColor = document.querySelectorAll('.item-nav-bar, .Titulo-Sobre, .Text
 
 cor.addEventListener('change', ()=>{
     if(cor.checked){
-        logoHeader.forEach(logo =>{
-            logo.src = './img/logoBranco.svg'
-        })
-
         corpo.style.background = '#1a1a1a'
         header.style.background = '#1a1a1a'
 
+        logoHeader.forEach(logo =>{
+            logo.src = './img/logoBranco.svg'
+        })
         buttonImg.src = './img/moon.svg'
         textColor.forEach(text =>{
             text.style.color = '#ffffff'
         })
 
     }else{
-        logoHeader.forEach(logo =>{
-            logo.src = './img/Logo-medio.svg'
-        })
         corpo.style.background = '#ffffff'
         header.style.background = '#ffffff'
+        logoHeader.forEach(logo =>{
+            logo.src = './img/Logo-medio.svg'
+        })   
         buttonImg.src = './img/Sunny.svg'
         textColor.forEach(text =>{
             text.style.color = '#000000'
