@@ -279,6 +279,7 @@ body{
     display: flex;
     align-items: center;
     height: 900px;
+    scroll-margin-top: 80px;
 }
 
 .Tec-Tea{
