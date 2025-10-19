@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name ="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conloq</title>
+    <link rel="icon" sizes="32x32" href="img/Logo-Icon.svg" type="image/png">
     <link rel="stylesheet" href="css/style.css" type="text/css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins"rel="stylesheet"/>
   </head>
   <body>
     <div class="container">
@@ -138,7 +138,15 @@
           </div>
           <div class="Div-Img-Sobre-Tea">
             <div class="Div-Carrousel-Img-Sobre-Tea">
-              <img src="./img/TeaKid.svg" alt="" class="Img-Div-Sobre-Tea">
+              <div>
+                <img src="./img/TeaKid.svg" alt="" class="Img-Div-Sobre-Tea">
+              </div>
+              <div>
+                <img src="./img/imgCarrousel1.svg" alt="" class="Img-Div-Sobre-Tea">
+              </div>
+              <div>
+                <img src="./img/imgCarrousel2.svg" alt="" class="Img-Div-Sobre-Tea">
+              </div>
             </div>
           </div>
         </section>
@@ -146,14 +154,18 @@
         <section class="Sobre" id="Section-Sobre">
           <div class="Tec-Tea">
             <h1 class="Title-Sobre-Tec-Tea">Tec-Tea</h1>
+            <div class="bolinhas-container">
+        <button class="bolinha-ativa" data-target="img1" aria-label="Mostrar imagem 1"></button>
+        <button class="bolinha-padrao" data-target="img2" aria-label="Mostrar imagem 2"></button>
+      </div>
               <p class="Text-Sobre-Tec-Tea">
               Este projeto emprega técnicas de visão computacional <br> para identificar e interpretar expressões 
               faciais de crianças <br> com Transtorno do Espectro Autista (TEA) <br>durante sessões terapêuticas.
               </p>
           </div>
           <div class="Div-Img-Sobre-Tec-Tea">
-            <img src="img/tec-tea-carrosel-img01.svg" alt="Img-Div-Sobre-Tec-Tea-1" class="Img-Div-Sobre-Tec-Tea-1">
-            <img src="img/tec-tea-carrosel-img02.svg" alt="Img-Div-Sobre-Tec-Tea-2" class="Img-Div-Sobre-Tec-Tea-2">
+            <img id="img2" src="img/tec-tea-carrosel-img01.svg" alt="Img-Div-Sobre-Tec-Tea-1" class="card-img">
+            <img id="img1" src="img/tec-tea-carrosel-img02.svg" alt="Img-Div-Sobre-Tec-Tea-2" class="card-img">
           </div>
         </section>
 

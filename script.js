@@ -29,4 +29,32 @@ cor.addEventListener('change', ()=>{
             text.style.color = '#000000'
         })
     }
-})
+});
+
+const carrousel = document.querySelector('.Div-Carrousel-Img-Sobre-Tea');
+carrousel.innerHTML += carrousel.innerHTML;
+
+
+
+(function(){
+      const buttons = document.querySelectorAll('.bolinhas-container button');
+      const imgContainer = document.querySelector('.Div-Img-Sobre-Tec-Tea');
+
+      function setActive(targetId) {
+        buttons.forEach(b => b.classList.toggle('bolinha-ativa', b.dataset.target === targetId));
+        // quando target é img2 aplicamos swap (inverte posições e camadas)
+        if (targetId === 'img2') {
+          imgContainer.classList.add('swap');
+        } else {
+          imgContainer.classList.remove('swap');
+        }
+      }
+
+      buttons.forEach(btn => btn.addEventListener('click', () => setActive(btn.dataset.target)));
+
+      // estado inicial
+      setActive(document.querySelector('.bolinha-ativa')?.dataset.target || 'img1');
+    })();
+
+
+

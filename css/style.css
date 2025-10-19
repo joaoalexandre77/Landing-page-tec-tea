@@ -1,403 +1,466 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    padding: 0px;
-    margin: 0px;
-    height: 100vh;
-    padding-top: 80px;
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+  padding-top: 80px;
 }
 
-.container{
-    padding: 0px;
-    margin: 0px;
-    height: 100vh;
+.container {
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
 }
 
 /* Início Tela Header */
-.header-bar{
-    z-index: 3;
-    display: flex; 
-    position: fixed;
-    justify-content: space-between;
-    align-items: center;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    height: 80px;
-    background-color:#ffffff;
-    padding: 0px 50px 0px 50px;
-    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.30);    
+.header-bar {
+  z-index: 3;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 80px;
+  background-color: #ffffff;
+  padding: 0px 50px 0px 50px;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.3);
 }
 
-.nav-bar{
-    color: #000000;
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
+.nav-bar {
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
 }
 
-.item-nav-bar{
-    text-decoration: none;
-    color: #000000;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 26px;
-    margin: 5px 0px 5px 40px;
-    transition: opacity 0.2s;
+.item-nav-bar {
+  text-decoration: none;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 5px 0px 5px 40px;
+  transition: opacity 0.2s;
 }
 
-.item-nav-bar:active{
-    opacity: 0.4;
+.item-nav-bar:active {
+  opacity: 0.4;
 }
 
-.logo-hearder{
-    width: 200px;
+.logo-hearder {
+  width: 200px;
 }
 
-.Header-Button{
-    margin: 5px 0px 5px 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Header-Button {
+  margin: 5px 0px 5px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Header-Button input{
-    display: none;
+.Header-Button input {
+  display: none;
 }
 
-.Img-Header-Button{
-    height: 36px;
+.Img-Header-Button {
+  height: 36px;
 }
 /* Fim Tela Header */
 
-
 /* Tela Inicial */
-.Tela-Inicial{
-    background-image: url('../img/mainIMG.svg');
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    height: 900px;
-    z-index: 0;
+.Tela-Inicial {
+  background-image: url("../img/mainIMG.svg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 900px;
+  z-index: 0;
 }
 
-.logoText{
-    margin-left: 80px;
-    width: 700px;
-    height: 700px;
+.logoText {
+  margin-left: 80px;
+  width: 700px;
+  height: 700px;
 }
 /* Fim Tela Inicial */
 
-
 /* Início Tela Sobre Equipe */
-.Sobre-Equipe{
-    scroll-margin-top: 80px;
-    height: 900px;
-    border-top-left-radius: 30px;
+.Sobre-Equipe {
+  scroll-margin-top: 80px;
+  height: 900px;
+  border-top-left-radius: 30px;
 }
 
-.Column{
-    display: flex;
-    flex-direction: row;
-    margin: 0px 40px 0px 40px;
+.Column {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 40px 0px 40px;
 }
 
-.Titulo-Sobre{
-    display: flex;
-    justify-content: center;
-    font-size: 70px;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
+.Titulo-Sobre {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-
-.Text-Sobre{
-    flex: 1;
-    margin-left: 25px;
-    display: flex;
-    flex-direction: column;
-    font-size: 35px;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
+.Text-Sobre {
+  flex: 1;
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
 }
 
-.Logo-Sobre{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Logo-Sobre {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.Logo-Conloq{
-    width: 800px;
+.Logo-Conloq {
+  width: 800px;
 }
 
 /* Fim Tela Sobre Equipe */
 
-
 /* Início Tela Equipe*/
-.Section-Equipe{
-    height: 900px;
-    background-color: #007ABE;
-    scroll-margin-top: 80px;
+.Section-Equipe {
+  height: 900px;
+  background-color: #007abe;
+  scroll-margin-top: 80px;
 }
 
-.Div-Equipe{
-    display: flex;
-    flex-direction: column;
+.Div-Equipe {
+  display: flex;
+  flex-direction: column;
 }
 
-.Title-Equipe{
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 41px;
-    margin-left: 50px;
+.Title-Equipe {
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 41px;
+  margin-left: 50px;
 }
 
-.Div-Cards-Equipe{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-left: 40px;
-    margin-right: 40px;
-    flex-wrap: wrap;
-    gap: 30px;
+.Div-Cards-Equipe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 40px;
+  margin-right: 40px;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.Card-Equipes{
-    width: 330px;
-    height: 450px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    position: relative;
-    transition: transform 0.3s;
+.Card-Equipes {
+  width: 330px;
+  height: 450px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  position: relative;
+  transition: transform 0.3s;
 }
 
-.Card-Equipes:hover{
-    transform: scale(1.06);
+.Card-Equipes:hover {
+  transform: scale(1.06);
 }
 
-
-.Image-Card-Equipe{
-    width: 330px;
-    height: 450px;
-    border-radius: 15px;
-    object-fit: cover;
-    transition: border-radius 0.3s, height 0.2s;
+.Image-Card-Equipe {
+  width: 330px;
+  height: 450px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: border-radius 0.3s, height 0.2s;
 }
 
-.Card-Equipes:hover .Image-Card-Equipe{
-    height: 330px;
-    border-radius: 15px 15px 0px 0px;
+.Card-Equipes:hover .Image-Card-Equipe {
+  height: 330px;
+  border-radius: 15px 15px 0px 0px;
 }
 
-.Info-Cards-Equipe{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    opacity: 0;
-    transition: opacity 0.2s;
+.Info-Cards-Equipe {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
-.Text-Info-Cards-Equipe{ 
-    font-family: 'roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 500;
-
+.Text-Info-Cards-Equipe {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.Card-Equipes:hover .Info-Cards-Equipe{
-    opacity: 1;
+.Card-Equipes:hover .Info-Cards-Equipe {
+  opacity: 1;
 }
 
-.Link-Text-Info-Cards-Equipe:hover{
-    transform: scale(1.15);
+.Link-Text-Info-Cards-Equipe:hover {
+  transform: scale(1.15);
 }
 
-.Link-Text-Info-Cards-Equipe:active{
-    opacity: 0.5;
+.Link-Text-Info-Cards-Equipe:active {
+  opacity: 0.5;
 }
 
 /* Fim Tela Equipe*/
 
-
 /* Início Tela Tea*/
-.Sobre-Tea{
-    height: 900px;
-    display: flex;
-    margin-top: 100px;
+.Sobre-Tea {
+  height: 900px;
+  display: flex;
+  margin-top: 100px;
 }
 
-.Div-Text-Sobre-Tea{
-   flex: 2;
+.Div-Text-Sobre-Tea {
+  flex: 2;
 }
 
-.Title-Sobre-Tea{
-    color: #000000;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    margin-left: 40px;
-    font-weight: 600;
-    font-size: 40px;
+.Title-Sobre-Tea {
+  color: #000000;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  font-weight: 600;
+  font-size: 40px;
 }
 
-.Text-Sobre-Tea{
-    color: #000000;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    margin-left: 40px;
-    font-size: 30px;
+.Text-Sobre-Tea {
+  color: #000000;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  font-size: 30px;
 }
 
-.Div-Img-Sobre-Tea{
-    flex:1.5;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    height: 100%;
+.Div-Img-Sobre-Tea {
+  flex: 1.5;
+  display: flex;
+  height: 100%;
+  width: 90%;
+  overflow: auto;
 }
 
-.Img-Div-Sobre-Tea{
+.Div-Img-Sobre-Tea::-webkit-scrollbar{
+    display: none;
+}
+
+.Div-Carrousel-Img-Sobre-Tea {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: carrousel 7s infinite linear;
+}
+
+.Img-Div-Sobre-Tea {
     height: 750px;
-    object-fit: cover;
 }
 
- .Div-Carrousel-Img-Sobre-Tea{
-    border-top-left-radius:150px ;
-    border-bottom-left-radius:150px ;
-    overflow: hidden;   
- }
-
+ @keyframes carrousel{
+    from{translate: 0;}
+    to{translate: -50%;}
+    }
 
 /* Fim Tela Tea*/
 
-
 /* Início Tela Tec-Tea*/
-.Sobre{
-    display: flex;
-    align-items: center;
-    height: 900px;
-    scroll-margin-top: 80px;
+.Sobre {
+  display: flex;
+  align-items: center;
+  height: 900px;
+  scroll-margin-top: 80px;
 }
 
-.Tec-Tea{
-    display: flex;
-    flex: 0.9;
-    flex-direction: column;
+.Tec-Tea {
+  display: flex;
+  flex: 0.9;
+  flex-direction: column;
 }
-.Title-Sobre-Tec-Tea{
-    color: #000000;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    margin-left: 40px;
-    font-size: 50px;
+.Title-Sobre-Tec-Tea {
+  color: #000000;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  margin-left: 40px;
+  font-size: 50px;
 }
-.Text-Sobre-Tec-Tea{
-    margin-left: 40px;
-    font-size: 30px;
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
+.Text-Sobre-Tec-Tea {
+  margin-left: 40px;
+  font-size: 30px;
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+}
+/* carrosel tec-tea */
+
+.Div-Img-Sobre-Tec-Tea {
+  position: relative;
+  flex: 0 0 60%;
+  width: 100%;
+  max-width: 100%;            /* garante que a área das imagens não ultrapasse a tela */
+  min-height: 520px;
+  display: block;
+  overflow: visible;
 }
 
-.Div-Img-Sobre-Tec-Tea{
-    position: relative;
-    flex: 1;
-    display: flex;
-    height: 100%;
+/* imagens como layers (sem card) */
+.card-img {
+  position: absolute;
+  width: 60%;                  /* largura relativa ao container direito */
+  max-width: 520px;            /* limite em px para telas grandes */
+  height: auto;
+  max-height: 720px;
+  object-fit: contain;
+  display: block;
+  transition: left 420ms cubic-bezier(.22,.9,.36,1), top 420ms cubic-bezier(.22,.9,.36,1), transform 420ms cubic-bezier(.22,.9,.36,1), opacity 300ms;
+  will-change: left, top, transform, opacity;
+  pointer-events: none;
+  border: none;
+  background: transparent;
+  transform-origin: center center;
 }
 
-.Img-Div-Sobre-Tec-Tea-1{
-    z-index: 2;
-    position: absolute;
-    left: 1px;
-    bottom: 100px;
+/* posições — valores calculados para não ultrapassar borda direita (centro da imagem dentro dos limites) */
+#img1 {
+  left: 40%;
+  top: 58%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+  opacity: 1;
+}
+#img2 {
+  left: 72%;
+  top: 30%;
+  transform: translate(-50%, -50%) scale(0.98);
+  z-index: 1;
+  opacity: 0.98;
 }
 
-.Img-Div-Sobre-Tec-Tea-2{
-    z-index: 1;
-    position: absolute;
-    right: 1px;
-    top: 1px;
+/* swap: inverte posições sem extrapolar */
+.Div-Img-Sobre-Tec-Tea.swap #img1 {
+  left: 72%;
+  top: 30%;
+  transform: translate(-50%, -50%) scale(0.98);
+  z-index: 1;
+  opacity: 0.98;
+}
+.Div-Img-Sobre-Tec-Tea.swap #img2 {
+  left: 40%;
+  top: 58%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 2;
+  opacity: 1;
+}
+
+/* responsividade para telas menores — reduz tamanhos e evita overflow */
+
+
+/* estilos das bolinhas (indicadores) */
+.bolinhas-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+.bolinhas-container button {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: #ddd;
+  transition: 200ms, transform 200ms;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.bolinhas-container .bolinha-ativa {
+  background: #2b7cff;
+  transform: scale(1.15);
 }
 /* Fim Tela Tec-Tea*/
 
-
 /* Início Footer*/
-.Div-Footer{
-    height: 250px;
-    background-color: #007ABE;
-    padding: 0px 40px 0px 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.Div-Footer {
+  height: 250px;
+  background-color: #007abe;
+  padding: 0px 40px 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.Footer-Conteudo{
-    display: flex;
-    flex-direction: column;
+.Footer-Conteudo {
+  display: flex;
+  flex-direction: column;
 }
 
-.Div-Info-Footer{
-    display: flex;
-    justify-content: space-between;
+.Div-Info-Footer {
+  display: flex;
+  justify-content: space-between;
 }
 
-.Info-Footer{
-    display: flex;
+.Info-Footer {
+  display: flex;
 }
 
-.Cont-Footer{
-    display: flex;
-    flex-direction: column;
-    margin-right: 200px;
+.Cont-Footer {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
 }
 
-.Text-Cont-Footer{
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    margin: 10px 0px 0px 0px;
-    font-size: 35px;
-    font-weight: 500;
+.Text-Cont-Footer {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  margin: 10px 0px 0px 0px;
+  font-size: 35px;
+  font-weight: 500;
 }
 
-.Img-Text-Cont-Footer{
-    margin: 5px;
-    transition: transform 0.3s;
+.Img-Text-Cont-Footer {
+  margin: 5px;
+  transition: transform 0.3s;
 }
 
-.Img-Text-Cont-Footer:hover{
-    transform: scale(1.1);
+.Img-Text-Cont-Footer:hover {
+  transform: scale(1.1);
 }
 
-.Img-Text-Cont-Footer:active{
-    opacity: 0.5;
+.Img-Text-Cont-Footer:active {
+  opacity: 0.5;
 }
 
-.Rede-Footer{
-    display: flex;
-    flex-direction: column;
+.Rede-Footer {
+  display: flex;
+  flex-direction: column;
 }
 
-.Logo-Footer{
-    display: flex;
+.Logo-Footer {
+  display: flex;
 }
 
-.Img-Logo-Footer{
-    width: 400px;
+.Img-Logo-Footer {
+  width: 400px;
 }
 
-.Footer-Copy{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.Footer-Copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.Text-Footer-Copy{
-    font-family: 'roboto', Arial, Helvetica, sans-serif;
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: 500;
-    margin: 0px;
+.Text-Footer-Copy {
+  font-family: "roboto", Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px;
 }
 
 /* Fim Footer*/
