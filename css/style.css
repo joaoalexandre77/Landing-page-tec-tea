@@ -34,6 +34,7 @@ body {
 .nav-bar {
   color: #000000;
   display: flex;
+  align-items: center;
   flex-direction: row;
   text-decoration: none;
 }
@@ -70,6 +71,7 @@ body {
 .Img-Header-Button {
   height: 36px;
 }
+
 /* Fim Tela Header */
 
 /* Tela Inicial */
@@ -81,13 +83,15 @@ body {
   width: 100%;
   height: 900px;
   z-index: 0;
+  background-repeat: no-repeat;
 }
 
-.logoText {
+.logoInicial {
   margin-left: 80px;
   width: 700px;
   height: 700px;
 }
+
 /* Fim Tela Inicial */
 
 /* Início Tela Sobre Equipe */
@@ -111,8 +115,8 @@ body {
 }
 
 .Text-Sobre {
+  overflow-wrap: break-word;
   flex: 1;
-  margin-left: 25px;
   display: flex;
   flex-direction: column;
   font-size: 35px;
@@ -149,13 +153,13 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 41px;
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 .Div-Cards-Equipe {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-left: 40px;
   margin-right: 40px;
   flex-wrap: wrap;
@@ -227,12 +231,13 @@ body {
 
 .Div-Text-Sobre-Tea {
   flex: 2;
+  margin-left: 50px;
+  margin-right: 20px;
 }
 
 .Title-Sobre-Tea {
   color: #000000;
   font-family: "roboto", Arial, Helvetica, sans-serif;
-  margin-left: 40px;
   font-weight: 600;
   font-size: 40px;
 }
@@ -240,45 +245,54 @@ body {
 .Text-Sobre-Tea {
   color: #000000;
   font-family: "roboto", Arial, Helvetica, sans-serif;
-  margin-left: 40px;
   font-size: 30px;
+  overflow-wrap: break-word;
 }
 
 .Div-Img-Sobre-Tea {
   flex: 1.5;
+  align-items: center;
   display: flex;
   height: 100%;
   width: 90%;
   overflow: auto;
 }
 
-.Div-Img-Sobre-Tea::-webkit-scrollbar{
-    display: none;
+.Div-Img-Sobre-Tea::-webkit-scrollbar {
+  display: none;
 }
 
 .Div-Carrousel-Img-Sobre-Tea {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
   gap: 20px;
   animation: carrousel 7s infinite linear;
 }
 
 .Img-Div-Sobre-Tea {
-    height: 750px;
+  height: 750px;
+ 
 }
 
- @keyframes carrousel{
-    from{translate: 0;}
-    to{translate: -50%;}
-    }
+@keyframes carrousel {
+  from {
+    translate: 0;
+  }
+
+  to {
+    translate: -50%;
+  }
+}
 
 /* Fim Tela Tea*/
 
 /* Início Tela Tec-Tea*/
 .Sobre {
   display: flex;
-  align-items: center;
-  height: 900px;
+  align-items: start;
+  height: 800px;
   scroll-margin-top: 80px;
 }
 
@@ -287,24 +301,28 @@ body {
   flex: 0.9;
   flex-direction: column;
 }
+
 .Title-Sobre-Tec-Tea {
   color: #000000;
   font-family: "roboto", Arial, Helvetica, sans-serif;
   margin-left: 40px;
   font-size: 50px;
 }
+
 .Text-Sobre-Tec-Tea {
   margin-left: 40px;
   font-size: 30px;
   font-family: "roboto", Arial, Helvetica, sans-serif;
 }
+
 /* carrosel tec-tea */
 
 .Div-Img-Sobre-Tec-Tea {
   position: relative;
   flex: 0 0 60%;
   width: 100%;
-  max-width: 100%;            /* garante que a área das imagens não ultrapasse a tela */
+  max-width: 100%;
+  /* garante que a área das imagens não ultrapasse a tela */
   min-height: 520px;
   display: block;
   overflow: visible;
@@ -313,17 +331,18 @@ body {
 /* imagens como layers (sem card) */
 .card-img {
   position: absolute;
-  width: 60%;                  /* largura relativa ao container direito */
-  max-width: 520px;            /* limite em px para telas grandes */
+  width: 60%;
+  /* largura relativa ao container direito */
+  max-width: 520px;
+  /* limite em px para telas grandes */
   height: auto;
   max-height: 720px;
   object-fit: contain;
   display: block;
-  transition: left 420ms cubic-bezier(.22,.9,.36,1), top 420ms cubic-bezier(.22,.9,.36,1), transform 420ms cubic-bezier(.22,.9,.36,1), opacity 300ms;
+  transition: left 420ms cubic-bezier(.22, .9, .36, 1), top 420ms cubic-bezier(.22, .9, .36, 1), transform 420ms cubic-bezier(.22, .9, .36, 1), opacity 300ms;
   will-change: left, top, transform, opacity;
   pointer-events: none;
   border: none;
-  background: transparent;
   transform-origin: center center;
 }
 
@@ -335,6 +354,7 @@ body {
   z-index: 2;
   opacity: 1;
 }
+
 #img2 {
   left: 72%;
   top: 30%;
@@ -351,6 +371,7 @@ body {
   z-index: 1;
   opacity: 0.98;
 }
+
 .Div-Img-Sobre-Tec-Tea.swap #img2 {
   left: 40%;
   top: 58%;
@@ -359,9 +380,6 @@ body {
   opacity: 1;
 }
 
-/* responsividade para telas menores — reduz tamanhos e evita overflow */
-
-
 /* estilos das bolinhas (indicadores) */
 .bolinhas-container {
   display: flex;
@@ -369,6 +387,7 @@ body {
   margin-top: 10px;
   margin-left: 40px;
 }
+
 .bolinhas-container button {
   width: 16px;
   height: 16px;
@@ -377,12 +396,14 @@ body {
   cursor: pointer;
   background: #ddd;
   transition: 200ms, transform 200ms;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
+
 .bolinhas-container .bolinha-ativa {
   background: #2b7cff;
   transform: scale(1.15);
 }
+
 /* Fim Tela Tec-Tea*/
 
 /* Início Footer*/
@@ -428,6 +449,32 @@ body {
   transition: transform 0.3s;
 }
 
+.Img-Cont-Footer {
+  margin: 5px;
+  transition: transform 0.3s;
+}
+
+.Img-Gmail-Cont-Footer {
+  margin: 5px;
+  transition: transform 0.3s;
+}
+
+.Img-Cont-Footer:hover {
+  transform: scale(1.1);
+}
+
+.Img-Cont-Footer:active {
+  opacity: 0.5;
+}
+
+.Img-gmail-Cont-Footer:hover {
+  transform: scale(1.1);
+}
+
+.Img-gmail-Cont-Footer:active {
+  opacity: 0.5;
+}
+
 .Img-Text-Cont-Footer:hover {
   transform: scale(1.1);
 }
@@ -464,3 +511,503 @@ body {
 }
 
 /* Fim Footer*/
+
+
+
+/* Extra pequeno*/
+@media (min-wid) (max-width: 480px) {
+  /* estilos */
+}
+
+/* Pequeno*/
+@media (min-width: 481px) and (max-width: 768px) {
+  /* estilos */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Médio*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  .logoInicial {
+    width: 500px;
+    margin-left: 0;
+  }
+
+  .logo-hearder {
+    width: 120px;
+  }
+
+  .item-nav-bar {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 0px 5px 40px;
+    transition: opacity 0.2s;
+  }
+
+
+  /* Tela Inicial */
+  .Tela-Inicial {
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Fim Tela Inicial */
+
+  /* Tela Sobre Conloq */
+  .Titulo-Sobre{
+    font-size: 50px;
+  }
+  .Sobre-Equipe {
+    scroll-margin-top: 80px;
+    height: 800px;
+    border-top-left-radius: 30px;
+  }
+
+  .Text-Sobre {
+    margin-left: 25px;
+    margin-right: 5px;
+    font-size: 20px;
+
+  }
+
+  .Logo-Sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Logo-Conloq {
+    width: 400px;
+  }
+
+  /*  Fim Tela Conloq */
+
+  /* Inicio Tela Equipe */
+  .Section-Equipe {
+    height: 2600px;
+  }
+
+  .Div-Cards-Equipe {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /*  Fim Tela Equipe */
+
+  /*  Inicio Tela Tea */
+  .Sobre-Tea {
+    height: 900px;
+    flex-direction: column;
+
+  }
+
+  .Div-Text-Sobre-Tea {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .Text-Sobre-Tea {
+    font-size: 20px;
+  }
+
+  
+.Div-Img-Sobre-Tea {
+  flex: 1.5;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+
+  /*  Fim Tela Tea */
+
+  /*  Inicio Tela Tec-Tea */
+  .Text-Sobre-Tec-Tea {
+    font-size: 20px;
+  }
+
+  /*  Fim Tela Tec-tea */
+
+  /* Início Footer*/
+  .Cont-Footer {
+    margin-right: 45px;
+  }
+
+  .Img-Logo-Footer {
+  width: 200px;
+  }
+
+  .Text-Cont-Footer {
+    font-size: 25px;
+  }
+
+  .Img-Text-Cont-Footer {
+    width: 100px;
+  }
+
+  .Img-Cont-Footer {
+    height: 25px;
+  }
+
+  .Img-Gmail-Cont-Footer {
+    width: 60px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Grande */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+  /*NaviBar*/
+  .item-nav-bar {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 0px 5px 40px;
+    transition: opacity 0.2s;
+  }
+
+  .Img-Header-Button {
+    height: 30px;
+  }
+
+  /* Tela Inicial */
+  .Tela-Inicial {
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Fim Tela Inicial */
+
+  /* Tela Sobre Conloq */
+  .Sobre-Equipe {
+    scroll-margin-top: 80px;
+    height: 800px;
+    border-top-left-radius: 30px;
+  }
+
+  .Text-Sobre {
+    margin-left: 25px;
+    font-size: 25px;
+
+  }
+
+  .Logo-Sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Logo-Conloq {
+    width: 400px;
+  }
+
+  /*  Fim Tela Conloq */
+
+  /* Inicio Tela Equipe */
+  .Section-Equipe {
+    height: 1600px;
+  }
+
+  .Div-Cards-Equipe {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /*  Fim Tela Equipe */
+
+  /*  Inicio Tela Tea */
+  .Div-Text-Sobre-Tea {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .Text-Sobre-Tea {
+    font-size: 20px;
+  }
+
+  /*  Fim Tela Tea */
+
+  /*  Inicio Tela Tec-Tea */
+  .Text-Sobre-Tec-Tea {
+    font-size: 20px;
+  }
+
+  /*  Fim Tela Tec-tea */
+
+  /* Início Footer*/
+  .Cont-Footer {
+    margin-right: 100px;
+  }
+
+  .Text-Cont-Footer {
+    font-size: 30px;
+  }
+
+  .Img-Text-Cont-Footer {
+    width: 100px;
+  }
+
+  .Img-Cont-Footer {
+    height: 25px;
+  }
+
+  .Img-Gmail-Cont-Footer {
+    width: 60px;
+  }
+
+  /*  Fim Tela Footer */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Extra grande*/
+@media (min-width: 1281px) and (max-width: 1536px) {
+
+  /* Tela Inicial */
+  .Tela-Inicial {
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Fim Tela Inicial */
+
+  /* Tela Sobre Conloq */
+  .Text-Sobre {
+    margin-left: 25px;
+    font-size: 25px;
+
+  }
+
+  .Logo-Sobre {
+    flex: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Logo-Conloq {
+    width: 600px;
+  }
+
+  /*  Fim Tela Conloq */
+
+  /* Inicio Tela Equipe */
+  .Section-Equipe {
+    height: 1200px;
+  }
+
+  .Div-Cards-Equipe {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  /*  Fim Tela Equipe */
+
+  /*  Inicio Tela Tea */
+  .Div-Text-Sobre-Tea {
+    flex: 1.2;
+    margin-right: 20px;
+  }
+
+  .Text-Sobre-Tea {
+    font-size: 24px;
+  }
+
+  /*  Fim Tela Tea */
+
+  /*  Inicio Tela Tec-Tea */
+  .Text-Sobre-Tec-Tea {
+    font-size: 25px;
+  }
+
+  /*  Fim Tela Tec-tea */
+
+  /* Início Footer*/
+  .Cont-Footer {
+    margin-right: 100px;
+  }
+
+  .Text-Cont-Footer {
+    font-size: 30px;
+  }
+
+  .Img-Text-Cont-Footer {
+    width: 100px;
+  }
+
+  .Img-Cont-Footer {
+    height: 25px;
+  }
+
+  .Img-Gmail-Cont-Footer {
+    width: 60px;
+  }
+
+  /*  Fim Tela Footer */
+}
+
+/* Super grande */
+@media (min-width: 1537px) and (max-width: 1849px) {
+
+  /* Tela Incial */
+  .Tela-Inicial {
+    background-image: url("../img/mainIMG.svg");
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .logoInicial {
+    width: 600px;
+    height: 600px;
+  }
+
+  /* Fim tela Inicial */
+
+  /* Início Tela Conloq */
+  .Text-Sobre {
+    margin-right: 5px;
+    font-size: 25px;
+    overflow-wrap: break-word;
+  }
+
+  /* Fim Tela Conloq */
+
+  /* Início Tela Equipe */
+  .Section-Equipe {
+    height: 1200px;
+  }
+
+  .Div-Cards-Equipe {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  /* Fim Tela Equipe */
+
+  /* Início Tela Tea */
+  .Div-Text-Sobre-Tea {
+    flex: 1.5;
+  }
+
+  .Text-Sobre-Tea {
+    overflow-wrap: break-word;
+    font-size: 25px;
+    margin-right: 20px;
+  }
+
+  /* Fim Tela Tea */
+
+  /* Início Tela Tec-Tea*/
+  .Text-Sobre-Tec-Tea {
+    font-size: 25px;
+  }
+
+  /* Fim Tela Tec-Tea */
+
+  /* Início Tela Footer */
+  .Cont-Footer {
+    margin-right: 100px;
+  }
+
+  .Text-Cont-Footer {
+    font-size: 30px;
+  }
+
+  .Img-Text-Cont-Footer {
+    width: 100px;
+  }
+
+  .Img-Cont-Footer {
+    height: 25px;
+  }
+
+  .Img-Gmail-Cont-Footer {
+    width: 60px;
+  }
+
+  /* Fim Tela Footer */
+}
