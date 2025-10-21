@@ -514,13 +514,13 @@ body {
 
 
 
-/* Extra pequeno*/
-@media (min-wid) (max-width: 480px) {
+/* Celular Extra pequeno*/
+@media (max-width: 480px) {
   /* estilos */
 }
 
-/* Pequeno*/
-@media (min-width: 481px) and (max-width: 768px) {
+/* CelularPequeno*/
+@media (min-width: 481px) and (max-width: 769px) {
   /* estilos */
 }
 
@@ -535,8 +535,25 @@ body {
 
 
 
-/* Médio*/
-@media (min-width: 769px) and (max-width: 1024px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Tablet*/
+@media (min-width: 770px) and (max-width: 1024px) {
   .logoInicial {
     width: 500px;
     margin-left: 0;
@@ -596,7 +613,7 @@ body {
 
   /* Inicio Tela Equipe */
   .Section-Equipe {
-    height: 2600px;
+    height: 1600px;
   }
 
   .Div-Cards-Equipe {
@@ -670,37 +687,9 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Grande */
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-  /*NaviBar*/
+/* Monitor pequeno */
+@media (min-width: 1025px) and (max-width: 1129px) {
+   /*NaviBar*/
   .item-nav-bar {
     font-weight: 600;
     font-size: 20px;
@@ -779,7 +768,7 @@ body {
 
   /*  Fim Tela Tec-tea */
 
-  /* Início Footer*/
+  /* Início Tela Footer*/
   .Cont-Footer {
     margin-right: 100px;
   }
@@ -799,48 +788,114 @@ body {
   .Img-Gmail-Cont-Footer {
     width: 60px;
   }
-
-  /*  Fim Tela Footer */
+  /* Fim Tela Footer */
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Extra grande*/
+@media (min-width: 1130px) and (max-width: 1280px) {
+   /*NaviBar*/
+  .item-nav-bar {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 0px 5px 40px;
+    transition: opacity 0.2s;
+  }
+
+  .Img-Header-Button {
+    height: 30px;
+  }
+
+  /* Tela Inicial */
+  .Tela-Inicial {
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Fim Tela Inicial */
+
+  /* Tela Sobre Conloq */
+  .Sobre-Equipe {
+    scroll-margin-top: 80px;
+    height: 800px;
+    border-top-left-radius: 30px;
+  }
+
+  .Text-Sobre {
+    margin-left: 25px;
+    font-size: 25px;
+
+  }
+
+  .Logo-Sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Logo-Conloq {
+    width: 400px;
+  }
+
+  /*  Fim Tela Conloq */
+
+  /* Inicio Tela Equipe */
+  .Section-Equipe {
+    height: 1200px;
+  }
+
+  .Div-Cards-Equipe {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /*  Fim Tela Equipe */
+
+  /*  Inicio Tela Tea */
+  .Div-Text-Sobre-Tea {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .Text-Sobre-Tea {
+    font-size: 20px;
+  }
+
+  /*  Fim Tela Tea */
+
+  /*  Inicio Tela Tec-Tea */
+  .Text-Sobre-Tec-Tea {
+    font-size: 20px;
+  }
+
+  /*  Fim Tela Tec-tea */
+
+  /* Início Tela Footer*/
+  .Cont-Footer {
+    margin-right: 100px;
+  }
+
+  .Text-Cont-Footer {
+    font-size: 30px;
+  }
+
+  .Img-Text-Cont-Footer {
+    width: 100px;
+  }
+
+  .Img-Cont-Footer {
+    height: 25px;
+  }
+
+  .Img-Gmail-Cont-Footer {
+    width: 60px;
+  }
+  /* Fim Tela Footer */
+}
+
+/* Monitor médio */
 @media (min-width: 1281px) and (max-width: 1536px) {
 
   /* Tela Inicial */
@@ -929,9 +984,9 @@ body {
   /*  Fim Tela Footer */
 }
 
-/* Super grande */
+/* Monitor grande */
 @media (min-width: 1537px) and (max-width: 1849px) {
-
+  
   /* Tela Incial */
   .Tela-Inicial {
     background-image: url("../img/mainIMG.svg");
