@@ -273,7 +273,7 @@ body {
 
 .Img-Div-Sobre-Tea {
   height: 750px;
- 
+
 }
 
 @keyframes carrousel {
@@ -516,12 +516,450 @@ body {
 
 /* Celular Extra pequeno*/
 @media (max-width: 480px) {
-  /* estilos */
+  .logoInicial {
+    width: 400px;
+    margin-left: 0;
+  }
+
+  .header-bar {
+    z-index: 3;
+    display: flex;
+    position: fixed;
+    justify-content: stretch;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80px;
+    background-color: #ffffff;
+    padding: 0px 50px 0px 5px;
+    box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .header-bar {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .logo-hearder {
+    width: 80px;
+  }
+
+  .item-nav-bar {
+    font-size: 13px;
+    margin: 5px 0px 5px 10px;
+  }
+
+
+  .Header-Button {
+    margin: 5px 0px 5px 10px;
+  }
+
+
+  .Img-Header-Button {
+    height: 20px;
+  }
+
+
+  /* Tela Inicial */
+  .Tela-Inicial {
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .logoInicial {
+    width: 300px;
+  }
+
+  /* Fim Tela Inicial */
+
+  /* Tela Sobre Conloq */
+  .Titulo-Sobre {
+    display: none;
+  }
+
+  .Sobre-Equipe {
+    scroll-margin-top: 80px;
+    height: 700px;
+    border-top-left-radius: 30px;
+  }
+
+  .Text-Sobre {
+    margin: 20px 0px 5px 0px;
+    font-size: 20px;
+
+  }
+
+  .Logo-Sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 5px 0px;
+  }
+
+  .Logo-Conloq {
+    width: 300px;
+  }
+
+  .Column {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 40px 0px 40px;
+  }
+
+
+  /*  Fim Tela Conloq */
+
+  /* Inicio Tela Equipe */
+  .Section-Equipe {
+    height: 1800px;
+  }
+
+  .Div-Cards-Equipe {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Card-Equipes {
+    width: 200px;
+    height: 300px;
+  }
+
+  .Info-Cards-Equipe {
+    left: 10px;
+  }
+
+  .Image-Card-Equipe {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  .Card-Equipes:hover {
+    transform: scale(1.05);
+  }
+
+  .Card-Equipes:hover .Image-Card-Equipe {
+    height: 200px;
+  }
+
+  .Text-Info-Cards-Equipe {
+    font-size: 11px;
+  }
+
+  .Link-Text-Info-Cards-Equipe {
+    height: 20px;
+
+  }
+
+  /*  Fim Tela Equipe */
+
+  /*  Inicio Tela Tea */
+  .Sobre-Tea {
+    height: 900px;
+    flex-direction: column;
+
+  }
+
+  .Div-Text-Sobre-Tea {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .Text-Sobre-Tea {
+    font-size: 20px;
+  }
+
+
+  .Div-Img-Sobre-Tea {
+    flex: 1.5;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .Img-Div-Sobre-Tea {
+    height: 300px;
+  }
+
+  /*  Fim Tela Tea */
+
+  /*  Inicio Tela Tec-Tea */
+  .Text-Sobre-Tec-Tea {
+    font-size: 20px;
+  }
+
+  /*  Fim Tela Tec-tea */
+
+  /* Início Footer*/
+  .Cont-Footer {
+    margin-right: 45px;
+  }
+
+  .Img-Logo-Footer {
+    width: 150px;
+  }
+
+  .Text-Cont-Footer {
+    font-size: 20px;
+  }
+
+  .Img-Text-Cont-Footer {
+    width: 70px;
+  }
+
+  .Img-Cont-Footer {
+    height: 20px;
+  }
+
+  .Img-Gmail-Cont-Footer {
+    width: 50px;
+  }
+
+  .Text-Footer-Copy {
+    font-size: 10px;
+  }
+
+  .Logo-Footer {
+    display: none;
+  }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* CelularPequeno*/
 @media (min-width: 481px) and (max-width: 769px) {
-  /* estilos */
+  .header-bar {
+    padding: 0px 10px 0px 10px;
+  }
+
+  .logoInicial {
+    width: 300px;
+    margin-left: 0;
+  }
+
+  .logo-hearder {
+    width: 100px;
+  }
+
+  .item-nav-bar {
+    font-size: 10px;
+    margin: 5px 0px 5px 20px;
+  }
+
+
+  .Header-Button {
+    margin: 5px 0px 5px 20px;
+  }
+
+  .Img-Header-Button {
+    height: 36px;
+  }
+
+  /* Tela Inicial */
+  .Tela-Inicial {
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  /* Fim Tela Inicial */
+
+  /* Tela Sobre Conloq */
+  .Titulo-Sobre {
+    display: none;
+  }
+
+  .Sobre-Equipe {
+    scroll-margin-top: 80px;
+    height: 700px;
+    border-top-left-radius: 30px;
+  }
+
+  .Text-Sobre {
+    margin-left: 25px;
+    margin-right: 5px;
+    font-size: 20px;
+
+  }
+
+  .Logo-Sobre {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Logo-Conloq {
+    margin-top: 130px;
+    width: 300px;
+  }
+
+  .Column {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0px 40px 0px 40px;
+  }
+
+
+  /*  Fim Tela Conloq */
+
+  /* Inicio Tela Equipe */
+  .Section-Equipe {
+    height: 1200px;
+  }
+
+  .Div-Cards-Equipe {
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .Card-Equipes {
+    width: 200px;
+    height: 300px;
+  }
+
+  .Info-Cards-Equipe {
+    left: 10px;
+  }
+
+  .Image-Card-Equipe {
+    width: 200px;
+    height: 300px;
+    border-radius: 15px;
+  }
+
+  .Card-Equipes:hover {
+    transform: scale(1.05);
+  }
+
+  .Card-Equipes:hover .Image-Card-Equipe {
+    height: 200px;
+  }
+
+  .Text-Info-Cards-Equipe {
+    font-size: 11px;
+  }
+
+  .Link-Text-Info-Cards-Equipe {
+    height: 20px;
+
+  }
+
+  /*  Fim Tela Equipe */
+
+  /*  Inicio Tela Tea */
+  .Sobre-Tea {
+    height: 900px;
+    flex-direction: column;
+
+  }
+
+  .Div-Text-Sobre-Tea {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .Text-Sobre-Tea {
+    font-size: 20px;
+  }
+
+
+  .Div-Img-Sobre-Tea {
+    flex: 1.5;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
+
+  .Img-Div-Sobre-Tea {
+    height: 400px;
+
+  }
+
+
+  /*  Fim Tela Tea */
+
+  /*  Inicio Tela Tec-Tea */
+  .Text-Sobre-Tec-Tea {
+    font-size: 20px;
+  }
+
+  /*  Fim Tela Tec-tea */
+
+  /* Início Footer*/
+  .Cont-Footer {
+    margin-right: 45px;
+  }
+
+  .Img-Logo-Footer {
+    width: 150px;
+  }
+
+  .Text-Cont-Footer {
+    font-size: 20px;
+  }
+
+  .Img-Text-Cont-Footer {
+    width: 70px;
+  }
+
+  .Img-Cont-Footer {
+    height: 20px;
+  }
+
+  .Img-Gmail-Cont-Footer {
+    width: 50px;
+  }
+
+  .Text-Footer-Copy {
+    font-size: 10px;
+  }
+
+  .Logo-Footer {
+    display: none;
+  }
 }
 
 
@@ -582,9 +1020,10 @@ body {
   /* Fim Tela Inicial */
 
   /* Tela Sobre Conloq */
-  .Titulo-Sobre{
+  .Titulo-Sobre {
     font-size: 50px;
   }
+
   .Sobre-Equipe {
     scroll-margin-top: 80px;
     height: 800px;
@@ -639,15 +1078,15 @@ body {
     font-size: 20px;
   }
 
-  
-.Div-Img-Sobre-Tea {
-  flex: 1.5;
-  align-items: center;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
+
+  .Div-Img-Sobre-Tea {
+    flex: 1.5;
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  }
 
 
   /*  Fim Tela Tea */
@@ -665,7 +1104,7 @@ body {
   }
 
   .Img-Logo-Footer {
-  width: 200px;
+    width: 200px;
   }
 
   .Text-Cont-Footer {
@@ -689,7 +1128,8 @@ body {
 
 /* Monitor pequeno */
 @media (min-width: 1025px) and (max-width: 1129px) {
-   /*NaviBar*/
+
+  /*NaviBar*/
   .item-nav-bar {
     font-weight: 600;
     font-size: 20px;
@@ -788,12 +1228,14 @@ body {
   .Img-Gmail-Cont-Footer {
     width: 60px;
   }
+
   /* Fim Tela Footer */
 }
 
 /* Extra grande*/
 @media (min-width: 1130px) and (max-width: 1280px) {
-   /*NaviBar*/
+
+  /*NaviBar*/
   .item-nav-bar {
     font-weight: 600;
     font-size: 20px;
@@ -892,6 +1334,7 @@ body {
   .Img-Gmail-Cont-Footer {
     width: 60px;
   }
+
   /* Fim Tela Footer */
 }
 
@@ -986,7 +1429,7 @@ body {
 
 /* Monitor grande */
 @media (min-width: 1537px) and (max-width: 1849px) {
-  
+
   /* Tela Incial */
   .Tela-Inicial {
     background-image: url("../img/mainIMG.svg");
