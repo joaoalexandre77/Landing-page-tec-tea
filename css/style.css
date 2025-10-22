@@ -299,7 +299,7 @@ body {
 .Tec-Tea {
   display: flex;
   flex: 0.9;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .Title-Sobre-Tec-Tea {
@@ -691,6 +691,12 @@ body {
   /*  Fim Tela Tea */
 
   /*  Inicio Tela Tec-Tea */
+  .Tec-Tea {
+    display: flex;
+    flex: 0.9;
+    flex-direction: column;
+  }
+
   .Text-Sobre-Tec-Tea {
     font-size: 20px;
   }
@@ -922,6 +928,13 @@ body {
   /*  Fim Tela Tea */
 
   /*  Inicio Tela Tec-Tea */
+
+  .Tec-Tea {
+    display: flex;
+    flex: 0.9;
+    flex-direction: column;
+  }
+
   .Text-Sobre-Tec-Tea {
     font-size: 20px;
   }
